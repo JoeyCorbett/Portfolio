@@ -9,23 +9,27 @@
 <body>
     <nav class="nav-bar">
         <ul>
-            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#AboutMe">About Me</a></li>
             <li><a href="#project-header">Projects</a></li>
             <li><a href="#resume-header">Resume</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="home-container">
+    <div id="Home" class="home-container">
         <div class="image-container">
             <img src="images/memoji.jpeg" alt="memoji holding up peace sign">
         </div>
         <div class="greeting-container">
             <h1>Hey, I'm Joseph.</h1>
-            <p>I'm an Aspiring Full Stack Developer and Computer Science Student Who Enjoys Creating User-Friendly Designs and Building Useful Apps</p>
+            <p>I'm an Aspiring Full Stack Developer and Computer Science Student Who Enjoys Creating User-Friendly Designs and Building Useful Apps.</p>
         </div>
     </div>
+    <div class="about-me-section">
+        <h1 id="AboutMe" class="section-headers">About Me</h1>
+    </div>
     <div class="projects-container">
-        <h1 id="project-header">Projects</h1>
+        <h1 class="section-headers" id="project-header">Projects</h1>
         <div class="project-div-container">
             <div class="project-divs project-one">
                 <img src="images/calculator.png" alt="Red and black modern calculator">
@@ -35,10 +39,13 @@
             </div>
         </div>
     </div>
-    <div id="resume-header" class="resume-section">
-        <h1>Resume</h1>
+    <div class="resume-section">
+        <h1 id="resume-header" class="section-headers">Resume</h1>
         <div class="resume-container">
         </div>
+    </div>
+    <div class="contact-section">
+        <h1 id="Contact" class="section-headers">Contact</h1>
     </div>
 </body>
 </html>
