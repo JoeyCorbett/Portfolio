@@ -10,11 +10,12 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif, system-ui, "Segoe UI", 
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 img,
 picture,
@@ -120,7 +121,7 @@ html {
   position: relative;
   width: 100%;
   height: auto;
-  top: 100px;
+  top: 60px;
   opacity: 0;
   animation: slideInUp 0.6s ease-out forwards;
   animation-delay: 0.2s;
@@ -128,26 +129,27 @@ html {
 
 .greeting-container h1, p {
   position: relative;
-  top: 100px;
+  top: 60px;
   opacity: 0;
   animation: slideInUp 0.6s ease-out forwards;
-  animation-delay: 0.2s
 }
 
 .greeting-container h1 {
   font-size: 70px;
   margin-bottom: 5px;
+  animation-delay: 0.3s;
 }
 
 .greeting-container p {
   font-size: 20px;
   color: rgb(85, 85, 85);
-  width: 520px;
+  width: 530px;
+  animation-delay: 0.4s;
 }
 
 @keyframes slideInUp {
   from {
-    top: 100px;
+    top: 60px;
     opacity: 0;
   }
   to {
@@ -159,50 +161,69 @@ html {
 .about-me-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
   height: 1200px;
-  margin-top: 100px;
+  margin-top: 500px;
   padding: 2rem;
-  width: 80%;
+  width: 100vw;
 }
 
 .about-me-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  height: 800px;
+  width: 1100px;
+}
+
+.about-me-info, .about-me-skills {
+  height: 500px;
+  width: 500px;
+}
+
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.about-me-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-container {
+  height: 320px;
+  width: 320px;
+  display: flex;
   flex-wrap: wrap;
-  height: 700px;
-  width: 900px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  margin-top: 60px;
-  border-radius: 20px;
+  gap: 30px;
+  margin-bottom: 80px;
 }
 
-.about-section {
-  flex: 1 1 50%;
-  text-align: left;
-  padding: 20px;
+.skill-div {
+  height: 85px;
+  width: 85px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.09);
 }
 
-.education-div {
-  border-right: 1px solid rgb(201, 201, 201);
-  border-bottom: 1px solid rgb(201, 201, 201);
-}
-
-.experience-div {
-  border-bottom: 1px solid rgb(201, 201, 201);
-}
 
 .projects-section {
   height: 1500px;
   width: 1100px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 500px;
 }
 
 .section-headers {
-  font-size: 40px;
+  text-align: center;
+  font-size: 2.5rem;
   padding-top: 130px;
   margin-top: -130px;
 }
@@ -281,7 +302,7 @@ html {
   height: 1000px;
   width: 80%;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1000px;
 }
 
 .resume-container {
