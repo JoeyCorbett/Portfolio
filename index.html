@@ -1,51 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Corbett</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="nav-bar">
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#AboutMe">About Me</a></li>
-            <li><a href="#project-header">Projects</a></li>
-            <li><a href="#resume-header">Resume</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#AboutMe">About Me</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
     </nav>
-    <div id="Home" class="home-container">
-        <div class="image-container">
-            <img src="images/memoji.jpeg" alt="memoji holding up peace sign">
-        </div>
-        <div class="greeting-container">
-            <h1>Hey, I'm Joseph.</h1>
-            <p>I'm an Aspiring Full Stack Developer and Computer Science Student Who Enjoys Creating User-Friendly Designs and Building Useful Apps.</p>
-        </div>
+    <div id="Home" class="home-section">
+      <div class="image-container">
+        <img
+          src="images/memoji.jpeg"
+          alt="memoji holding up peace sign"
+          draggable="false"
+        />
+      </div>
+      <div class="greeting-container">
+        <h1>Hey, I'm Joseph.</h1>
+        <p>
+          I'm an Aspiring Full Stack Developer and Computer Science Student Who
+          Enjoys Creating User-Friendly Designs and Building Useful Apps.
+        </p>
+      </div>
     </div>
     <div class="about-me-section">
-        <h1 id="AboutMe" class="section-headers">About Me</h1>
+      <h1 id="AboutMe" class="section-headers">About Me</h1>
+      <div class="about-me-container">
+        <div class="about-section education-div">
+          <h2>Education</h2>
+        </div>
+        <div class="about-section experience-div">
+          <h2>Experience</h2>
+        </div>
+        <div class="about-section skills-div">
+          <h2>Skills</h2>
+        </div>
+      </div>
     </div>
-    <div class="projects-container">
-        <h1 class="section-headers" id="project-header">Projects</h1>
-        <div class="project-div-container">
-            <div class="project-divs project-one">
-                <img src="images/calculator.png" alt="Red and black modern calculator">
-            </div>
-            <div class="project-divs project-two">
-                <img src="images/Etch-a-Sketch.png" alt="Etch-a-sketch">
+    <div class="projects-section">
+      <h1 class="section-headers" id="Projects">Projects</h1>
+      <div class="project-div-container">
+        <div class="project-divs project-one">
+            <img src="images/Macbook-Calc.png" alt="Macbook displaying grey and red calculator" draggable="false"> 
+            <div class="project-text">
+                <h2 class="project-h2">ModernCalc</h2>
+                <p class="project-p">Welcome to ModernCalc – an on-screen calculator with keyboard support. This project demonstrates fundamental JavaScript skills and provides a functional, user-friendly calculator interface.</p>
+                <a class="project-btn" href="https://joeycorbett.github.io/ModernCalc/" target="_blank">Live View</a>
             </div>
         </div>
+        <div class="project-divs project-two">
+            <img src="images/Macbook-Etch.png" alt="Macbook displaying Etch-A-Sketch Game" draggable="false"> 
+            <div class="project-text">
+                <h2 class="project-h2">Etch-a-Sketch</h2>
+                <p class="project-p">Welcome to Etch-a-Sketch, an interactive drawing app created for the Odin Project curriculum. This project demonstrates JavaScript, DOM manipulation skills, and a modern user interface</p>
+                <a class="project-btn" href="https://joeycorbett.github.io/Etch-a-Sketch/" target="_blank">Live View</a>
+            </div>
+        </div>
+        <div class="project-divs project-three">
+            <img src="images/Portfolio-macbook.png" alt="Macbook displaying portfolio page with memoji" draggable="false"> 
+            <div class="project-text">
+                <h2 class="project-h2">Portfolio</h2>
+                <p class="project-p">Welcome to my Portfolio, displaying my current design skills and emphasis on creating user-friendly interfaces. This site allowed me to push what I already know about front end design to new limits.</p>
+                <a class="project-btn" href="https://jcorb.dev/" target="_blank">Live View</a>
+            </div>
+        </div>
+      </div>
     </div>
     <div class="resume-section">
-        <h1 id="resume-header" class="section-headers">Resume</h1>
-        <div class="resume-container">
-        </div>
+      <h1 id="Resume" class="section-headers">Resume</h1>
+      <div class="resume-container"></div>
     </div>
     <div class="contact-section">
-        <h1 id="Contact" class="section-headers">Contact</h1>
+      <h1 id="Contact" class="section-headers">Contact</h1>
     </div>
-</body>
+    <footer class="no-select">© 2024 Joseph Corbett</footer>
+  </body>
 </html>
