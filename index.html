@@ -61,16 +61,25 @@
         <div class="about-me-info">
           <h2>About Me</h2>
           <p>
-            I'm a Web Developer, Computer Science Student, and IT Help Desk Technician. I built a strong foundation in HTML, CSS, and Javascript through The Odin Project, and my projects below showcase this progression.
+            I'm a Web Developer, Computer Science Student, and IT Help Desk
+            Technician. I built a strong foundation in HTML, CSS, and Javascript
+            through The Odin Project, and my projects below showcase this
+            progression.
           </p>
           <p>
-            I learned C and Python through CS50, gaining a deep understanding of data structures, algorithms, and how languages such as Python work at a low level. This experience sharpened my problem-solving skills and overall grasp of computer science topics.
+            I learned C and Python through CS50, gaining a deep understanding of
+            data structures, algorithms, and how languages such as Python work
+            at a low level. This experience sharpened my problem-solving skills
+            and overall grasp of computer science topics.
           </p>
           <p>
-            Outside of coding, I enjoy reading, exploring new topics, and staying active with weightlifting and HIIT.
+            Outside of coding, I enjoy reading, exploring new topics, and
+            staying active with weightlifting and HIIT.
           </p>
           <p>
-            I'm excited about opportunities where I can apply my skills and continue growing as a developer. If you have a role that matches my background, don't hesitate to contact me below.
+            I'm excited about opportunities where I can apply my skills and
+            continue growing as a developer. If you have a role that matches my
+            background, don't hesitate to contact me below.
           </p>
           <a href="#Contact" class="about-me-btn">Contact</a>
         </div>
@@ -197,7 +206,10 @@
           <div class="project-text">
             <h2 class="project-h2">LeaveRequestTracker</h2>
             <p class="project-p">
-              Welcome to LeaveRequestTracker, a web app designed for Stockton employees to manage leave requests efficienty. I handled the front end, focusing on user-friendly processes like logging in, resetting passwords, and account sign-ups.
+              Welcome to LeaveRequestTracker, a web app designed for Stockton
+              employees to manage leave requests efficienty. I handled the front
+              end, focusing on user-friendly processes like logging in,
+              resetting passwords, and account sign-ups.
             </p>
           </div>
         </div>
@@ -225,11 +237,36 @@
     <div class="resume-section">
       <h1 id="Resume" class="section-headers">Resume</h1>
       <a href="images/Resume SWEx.pdf" target="_blank" class="resume-container">
-        <img src="images/Resume.png" alt="My Resume">
+        <img src="images/Resume.png" alt="My Resume" />
       </a>
     </div>
     <div class="contact-section">
-      <h1 id="Contact" class="section-headers">Contact</h1>
+      <div class="contact-content">
+        <h1 id="Contact" class="section-headers">Contact</h1>
+        <p>
+          For employment opportunities or any questions, feel free to connect.
+          Use the form below to get in touch
+        </p>
+      </div>
+      <div class="form-container">
+        <form action="https://formspree.io/f/xblrwnrz" method="post">
+          <div class="form-input">
+            <input type="text" name="name" id="user_name" placeholder="Name" required />
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" id="user_email" placeholder="Email" required />
+          </div>
+          <div class="form-input">
+            <textarea
+              id="user_textarea"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="form-btn">Send Message</button>
+        </form>
+      </div>
     </div>
     <footer class="no-select">© 2024 Joseph Corbett</footer>
   </body>
