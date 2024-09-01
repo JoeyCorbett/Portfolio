@@ -268,8 +268,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 800px;
-  gap: 150px;
+  height: 2300px;
 }
 
 .project-one {
