@@ -167,7 +167,7 @@ p {
   align-items: center;
   height: 900px;
   padding: 2rem;
-  width: 100vw;
+  width: 98vw;
 }
 
 .about-me-container {
@@ -214,7 +214,7 @@ p {
 
 .skills-container {
   height: 405px;
-  width: 405px;
+  width: 410px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -251,8 +251,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1950px;
-  width: 100vw;
+  height: 2450px;
+  width: 98vw;
   text-align: center;
 }
 
@@ -310,6 +310,7 @@ p {
   width: 30rem;
   font-size: 1.05rem;
   margin-bottom: 20px;
+  line-height: 1.7;
 }
 
 .project-btn-container {
@@ -329,14 +330,14 @@ p {
   text-decoration: none;
   color: white;
   background-color: rgb(50, 64, 78);
-  padding: 15px;
+  padding: 12px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 120px;
+  width: 110px;
   text-align: center;
-  border: none;
+  border: 2px solid rgb(50, 64, 78);
 }
 
 .project-btn:hover,
@@ -387,7 +388,7 @@ p {
   justify-content: space-around;
   align-items: center;
   min-height: 850px;
-  width: 100vw;
+  width: 98vw;
   padding: 2rem;
   margin-bottom: -200px;
 }
@@ -432,7 +433,7 @@ textarea {
 
 textarea {
   min-height: 160px;
-  resize: vertical;
+  resize: none;
 }
 
 input:placeholder,
