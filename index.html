@@ -44,29 +44,32 @@
       </ul>
     </nav>
     <div id="Home" class="home-section">
-      <div class="image-container">
-        <img
-          src="images/memoji.jpeg"
-          alt="memoji holding up peace sign"
-          draggable="false"
-        />
-      </div>
-      <div class="greeting-container">
-        <h1>Hey, I'm Joseph.</h1>
-        <p>
-          I'm an Aspiring Full Stack Developer and Computer Science Student Who
-          Enjoys Creating User-Friendly Designs and Building Useful Apps.
-        </p>
+      <div class="home-container">
+        <div class="image-container">
+          <img
+            src="images/memoji.jpeg"
+            alt="memoji holding up peace sign"
+            draggable="false"
+          />
+        </div>
+        <div class="greeting-container">
+          <h1>Hey, I'm Joseph.</h1>
+          <p>
+            I'm an Aspiring Full Stack Developer and Computer Science Student Who
+            Enjoys Creating User-Friendly Designs and Building Useful Apps.
+          </p>
+        </div>
       </div>
     </div>
     <div class="about-me-section">
       <h1 id="About" class="section-headers">About</h1>
       <div class="about-me-container">
         <div class="about-me-info">
-          <h2>About Me</h2>
+          <h2>Get to know me!</h2>
+          <h3>Web Developer | CS Student | IT Help Desk Technician
+          </h3>
           <p>
-            I'm a Web Developer, Computer Science Student, and IT Help Desk
-            Technician. I built a strong foundation in HTML, CSS, and Javascript
+            I built a strong foundation in HTML, CSS, and Javascript
             through The Odin Project, and my projects below showcase this
             progression.
           </p>
@@ -130,6 +133,14 @@
               <h3>C</h3>
             </a>
             <a
+              href="https://www.w3schools.com/sql/sql_intro.asp"
+              target="_blank"
+              class="skill-div"
+            >
+              <img src="images/sql-icon.png" alt="SQL icon" />
+              <h3>SQL</h3>
+            </a>
+            <a
               href="https://support.apple.com/lv-lv/guide/terminal/trmld4c92d55/2.14/mac/14.0"
               target="_blank"
               class="skill-div"
@@ -147,10 +158,6 @@
             <a href="https://github.com/" target="_blank" class="skill-div">
               <img src="images/skill-icons/Github.png" alt="Github icon" />
               <h3>Github</h3>
-            </a>
-            <a href="https://figma.com/" target="_blank" class="skill-div">
-              <img src="images/skill-icons/Figma.png" alt="Figma icon" />
-              <h3>Figma</h3>
             </a>
           </div>
         </div>
@@ -174,18 +181,18 @@
             </p>
             <div class="project-btn-container">
               <a
-              class="project-btn"
-              href="https://joeycorbett.github.io/ModernCalc/"
-              target="_blank"
-              >Live View</a
-            >
-            <a
-              class="project-btn"
-              id="code-link"
-              href="https://github.com/JoeyCorbett/ModernCalc"
-              target="_blank"
-              >Code Link</a
-            >
+                class="project-btn"
+                href="https://joeycorbett.github.io/ModernCalc/"
+                target="_blank"
+                >Live View</a
+              >
+              <a
+                class="project-btn"
+                id="code-link"
+                href="https://github.com/JoeyCorbett/ModernCalc"
+                target="_blank"
+                >Code Link</a
+              >
             </div>
           </div>
         </div>
@@ -210,7 +217,8 @@
                 >Live View</a
               >
               <a
-                class="project-btn" id="code-link"
+                class="project-btn"
+                id="code-link"
                 href="https://github.com/JoeyCorbett/Etch-a-Sketch/"
                 target="_blank"
                 >Code Link</a
@@ -227,11 +235,15 @@
           <div class="project-text">
             <h2 class="project-h2">IMS+</h2>
             <p class="project-p">
-              Welcome to IMS+, a user script made for IMS (IT Help Desk Ticketing System) and  written in Javascript. The script adds shortcuts to the site, improves visual aesthetic, and adds a custom UI for both dark mode & light mode.
+              Welcome to IMS+, a user script made for IMS (IT Help Desk
+              Ticketing System) and written in Javascript. The script adds
+              shortcuts to the site, improves visual aesthetic, and adds a
+              custom UI for both dark mode & light mode.
             </p>
             <div class="project-btn-container">
               <a
-                class="project-btn" id="code-link"
+                class="project-btn"
+                id="code-link"
                 href="https://github.com/JoeyCorbett/IMS-PLUS"
                 target="_blank"
                 >Code Link</a
@@ -249,10 +261,18 @@
             <h2 class="project-h2">LeaveRequestTracker</h2>
             <p class="project-p">
               Welcome to LeaveRequestTracker, a web app designed for Stockton
-              employees to manage leave requests efficiently. I handled the front
-              end, focusing on user-friendly processes like logging in,
-              resetting passwords, and account sign-ups. (No links or view due to confidentiality)
+              employees to manage leave requests efficiently. I handled the
+              front end, focusing on user-friendly processes like logging in,
+              resetting passwords, and account sign-ups. (No links or view due
+              to confidentiality)
             </p>
+            <a
+                class="project-btn"
+                id="code-link"
+                href="https://github.com/TheDeadGPU/LeaveRequestTracker/tree/dev"
+                target="_blank"
+                >Code Link</a
+              >
           </div>
         </div>
         <div class="project-divs project-five">
@@ -273,7 +293,11 @@
               <a class="project-btn" href="https://jcorb.dev/" target="_blank"
                 >Live View</a
               >
-              <a class="project-btn" id="code-link" href="https://github.com/JoeyCorbett/Portfolio" target="_blank"
+              <a
+                class="project-btn"
+                id="code-link"
+                href="https://github.com/JoeyCorbett/Portfolio"
+                target="_blank"
                 >Code Link</a
               >
             </div>
@@ -283,7 +307,11 @@
     </div>
     <div class="resume-section">
       <h1 id="Resume" class="section-headers">Resume</h1>
-      <a href="images/SWE-Resume-NEW.pdf" target="_blank" class="resume-container">
+      <a
+        href="images/SWE-Resume-NEW.pdf"
+        target="_blank"
+        class="resume-container"
+      >
         <img src="images/Resume-SWE.png" alt="My Resume" />
       </a>
     </div>
@@ -298,10 +326,22 @@
       <div class="form-container">
         <form action="https://formspree.io/f/xblrwnrz" method="post">
           <div class="form-input">
-            <input type="text" name="name" id="user_name" placeholder="Name" required />
+            <input
+              type="text"
+              name="name"
+              id="user_name"
+              placeholder="Name"
+              required
+            />
           </div>
           <div class="form-input">
-            <input type="email" name="email" id="user_email" placeholder="Email" required />
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="Email"
+              required
+            />
           </div>
           <div class="form-input">
             <textarea
@@ -315,13 +355,19 @@
         </form>
       </div>
       <div class="socials-container">
-        <a href="https://www.linkedin.com/in/joseph-corbett-7ub/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/joseph-corbett-7ub/"
+          target="_blank"
+        >
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://github.com/JoeyCorbett" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fjoey_corb" target="_blank">
+        <a
+          href="https://x.com/i/flow/login?redirect_after_login=%2Fjoey_corb"
+          target="_blank"
+        >
           <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
