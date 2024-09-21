@@ -662,7 +662,6 @@ footer {
 
   .image-container {
     position: relative;
-    top: 25px;
   }
 
   .image-container img {
@@ -684,7 +683,6 @@ footer {
     font-size: 43px;
     font-weight: 700;
     margin-bottom: 17px;
-    margin-top: 53px;
   }
 
   .greeting-container p {
