@@ -35,6 +35,7 @@
     <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
   </head>
   <body>
+    <!--Mobile Navbar-->
     <header class="header">
       <nav class="navbar">
           <ul class="nav-menu">
@@ -54,13 +55,15 @@
                 <a href="#Contact" class="nav-link">Contact</a>
             </li>
           </ul>
-          <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
+          <img src="images/favicon_io/android-chrome-512x512.png" alt="white square with black J inside">
+          <svg class="bar" width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 24L30 24" stroke="black" stroke-width="4" stroke-linecap="round"/>
+            <path d="M2 13L30 13" stroke="black" stroke-width="4" stroke-linecap="round"/>
+            <path d="M2 2L30 2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+          </svg>          
       </nav>
     </header>
+    <!--Desktop Navbar-->
     <nav class="nav-bar">
       <ul>
         <li><a href="#Home">Home</a></li>
@@ -74,7 +77,7 @@
       <div class="home-container">
         <div class="image-container">
           <img
-            src="images/memoji.jpg"
+            src="images/memoji3.jpg"
             alt="memoji holding up peace sign"
             draggable="false"
           />
@@ -85,6 +88,17 @@
             I'm an Aspiring Full Stack Developer and Computer Science Student Who
             Enjoys Creating User-Friendly Designs and Building Useful Apps.
           </p>
+          <div class="icon-container">
+            <a class="github-icon" href="https://github.com/JoeyCorbett" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="linkedin-icon"
+            href="https://www.linkedin.com/in/joseph-corbett-7ub/"
+            target="_blank"
+            >
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -392,24 +406,6 @@
           </div>
           <button type="submit" class="form-btn">Send Message</button>
         </form>
-      </div>
-      <h3 class="social-heading">Social</h3>
-      <div class="socials-container">
-        <a
-          href="https://www.linkedin.com/in/joseph-corbett-7ub/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/JoeyCorbett" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://x.com/i/flow/login?redirect_after_login=%2Fjoey_corb"
-          target="_blank"
-        >
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
       </div>
     </div>
     <div class="footer-section">

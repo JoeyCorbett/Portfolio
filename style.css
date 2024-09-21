@@ -55,21 +55,27 @@ html {
 
 .header {
   position: fixed;
-  background-color: white;
-  border-bottom: 1px solid #e2e8f0;
   display: none;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   margin-bottom: -100px;
 }
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   width: 100%;
 }
+
+.navbar img {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  box-shadow: 0px 0px 3.5px 0px rgba(0, 0, 0, 0.25);
+  }
 
 .hamburger {
   display: none;
@@ -77,17 +83,13 @@ html {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -109,6 +111,8 @@ html {
 .nav-link:hover {
   color: #482ff7;
 }
+
+/* Desktop navbar */
 
 .nav-menu {
   position: fixed;
@@ -204,26 +208,18 @@ html {
   justify-content: center;
   min-height: 600px;
   width: 100%;
-  gap: 10px;
-}
-
-.image-container {
-  max-height: 430px;
-  width: auto;
-  height: 100%;
-  position: relative;
-  top: 20px;
+  gap: 100px;
 }
 
 .image-container img {
-  width: 100%;
-  min-width: 400px;
-  height: auto;
+  height: 100%;
+  width: auto;
   position: relative;
   opacity: 0;
   animation: slideInUp 0.6s ease-out forwards;
   animation-delay: 0.2s;
 }
+
 
 hr {
   border: 1px solid rgb(50, 64, 78);
@@ -236,7 +232,8 @@ hr {
 }
 
 .greeting-container h1,
-p {
+.greeting-container p,
+.icon-container {
   position: relative;
   top: 60px;
   opacity: 0;
@@ -253,7 +250,24 @@ p {
   font-size: 20px;
   color: rgb(85, 85, 85);
   max-width: 530px;
-  animation-delay: 0.4s;
+  animation-delay: 0.34s;
+  margin-bottom: 10px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+  font-size: 37px;
+  flex-shrink: 0;
+  animation: slideInUp 0.4s ease-out forwards;
+  animation-delay: 0.52s;
+}
+
+.github-icon,
+.linkedin-icon {
+  text-decoration: none;
+  color: black;
 }
 
 @keyframes slideInUp {
@@ -266,6 +280,7 @@ p {
     opacity: 1;
   }
 }
+
 
 .header-containers {
   display: flex;
@@ -587,30 +602,6 @@ textarea:focus {
   background-color: rgb(40, 51, 63);
 }
 
-.social-heading {
-  font-size: 1.4rem;
-  margin-bottom: 5px;
-}
-
-.socials-container {
-  display: flex;
-  gap: 12px;
-  margin-right: 5px;
-  font-size: 1.8rem;
-  bottom: 35px;
-}
-
-.socials-container a {
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
-  cursor: pointer;
-  color: black;
-}
-
-.socials-container a:hover {
-  opacity: 1;
-}
-
 .no-select {
   user-select: none;
   -webkit-user-select: none;
@@ -637,10 +628,12 @@ footer {
 
   .nav-bar {
     display: none;
+    position: fixed;
   }
 
   .header {
     display: block;
+    position: fixed;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -656,13 +649,58 @@ footer {
   }
 
   .home-section {
-    min-height: 80rem;
-    max-height: 120rem;
+    padding: 43px;
+  }
+
+  .home-container {
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .image-container {
+    position: relative;
+    top: 25px;
   }
 
   .image-container img {
+    width: 300px;
+    height: auto;
     position: relative;
-    left: 26px;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  .greeting-container h1 {
+    width: 322px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    margin-top: 53px;
+  }
+
+  .greeting-container p {
+    width: 325px;
+    height: 104px;  
+    flex-shrink: 0;
+    color: #555;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .icon-container {
+    justify-content: center;
   }
 
   .about-me-section {
@@ -685,7 +723,6 @@ footer {
 
   .home-container {
     flex-direction: column;
-    gap: 20px;
   }
   .about-me-container {
     display: flex;
@@ -732,9 +769,8 @@ footer {
     text-align: center;
   }
 
-  .image-container img {
-    position: relative;
-    left: 26px;
+  .icon-container {
+    justify-content: center;
   }
 
   .section-header-p {
@@ -761,7 +797,7 @@ footer {
 
   .home-container {
     flex-direction: column;
-    gap: 120px;
+    gap: 20px;
   }
   .about-me-container {
     display: flex;
@@ -782,10 +818,12 @@ footer {
   }
 
   .image-container {
-    height: auto;
-    width: 70%;
     position: relative;
-    min-width: 500px;
+  }
+
+  .image-container {
+    height: 440px;
+    width: auto;
   }
 
   .project-text {
@@ -812,13 +850,12 @@ footer {
     max-width: 450px;
   }
 
-  .image-container {
-    margin-right: -65px;
+  .home-container {
+    gap: 60px;
   }
 
   .image-container img {
-    width: 90%;
-    min-width: 370px;
+    width: 325px;
     height: auto;
   }
 
