@@ -292,7 +292,14 @@ hr {
 .linkedin-icon {
   text-decoration: none;
   color: black;
+  transition: transform 0.3s;
 }
+
+.github-icon:hover,
+.linkedin-icon:hover {
+  transform: scale(1.1);
+}
+
 
 @keyframes slideInUp {
   from {
