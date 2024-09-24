@@ -684,7 +684,7 @@ footer {
     justify-content: center;
     position: relative;
     text-align: center;
-    top: 10px;
+    top: 20px;
     gap: 0px;
 
   }
@@ -755,14 +755,18 @@ footer {
   }
   
   .skill-div {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 10px;
   }
 
+  .skill-div h3 {
+    font-size: 12px;
+  }
+
   .skill-div img {
-    height: 50px;
-    margin-bottom: 5px;
+    height: 40px;
+    margin-bottom: 2px;
   }
 
   .home-container {
