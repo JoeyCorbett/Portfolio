@@ -462,6 +462,19 @@ hr {
   width: 95%;
 }
 
+.video-link {
+  text-decoration: none; 
+  color: rgb(50, 64, 78);
+  font-weight: 600;
+  font-size: 16px; 
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; 
+}
+
+.video-link:hover {
+  border-bottom: 2px solid rgb(50, 64, 78);
+}
+
 .project-divs img {
   height: auto;
   width: 520px;
